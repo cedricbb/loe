@@ -7,37 +7,6 @@
  @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
 
 
-.icon {
-	width: 40px;
-	height: 40px;
-}
-
-#drop {
-	fill: #0177BF;
-	/*float: right;*/
-}
-
-#wind {
-	fill: #B2B2B2;
-	/*float: right;*/
-	/*margin-top: 150px;*/
-}
-
-#flame {
-	fill: #7B060C;
-}
-
-#leaf {
-	fill: #769629;
-	/*margin-top: 150px;*/
-}
-
-#flash {
-	fill: #DFCF00;
-}
-
-
-
 * {
 	margin:0px 0px 0px 0px; /** margin:0px; **/
 	padding:0px 0px 0px 0px;
@@ -47,9 +16,24 @@
 body{
 	width:100%!important;
 	height:100%!important;
-	background: linear-gradient(#4E5052, #46484A);
+	background: url('https://sorenette.files.wordpress.com/2015/08/2381381-hyrule.png') no-repeat;
+	background-size: cover;
+}
+/*---------------Titre--------------*/
+
+.logo{
+	width: 90px;
+	height:90px;
 }
 
+.f{
+	padding-right: 20px;
+}
+
+
+.legacy{
+	margin-right: 20px;
+}
 
 .divider {
 	width: 100%;
