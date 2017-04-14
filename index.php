@@ -15,8 +15,8 @@
 
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12"><h1 class="text-center titleGradient">Legacy Of Elements</h1></div>
-				<div class="col-sm-offset-4 col-sm-4 text-center"><?php include "wind.php";?><?php include "drop.php";?><?php include "flash.php";?><?php include "flame.php";?><?php include "leaf.php";?></div>
+				<div class="col-sm-12"><h1 class="text-center titleGradient"><span class="legacy">Legacy</span><img src="images/logo.png" class="logo" alt="logo" title="Logo"><span class="f">f</span>Elements</h1></div>
+				
 			</div>
 
 			<div class="divider"></div>
