@@ -121,7 +121,7 @@ input {
 .row {
 	margin: 0;
 }
-.interface {
+.default {
 	height:700px;
 	width: 80%;
 	padding-left: 0;
