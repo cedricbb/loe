@@ -8,8 +8,8 @@
 
 
 * {
-	margin:0px 0px 0px 0px; /** margin:0px; **/
-	padding:0px 0px 0px 0px;
+	margin:0; /** margin:0px; **/
+	padding:0;
 	/*font-family: 'Kaushan Script', cursive;*/
 	color: linear-gradient(#FFDED1, #FFEDEA);
 }
@@ -39,9 +39,6 @@ body{
 	width: 100%;
 	height: 50px;
 }
-
-
-
 
 h1 {
 	font-family: 'Kaushan Script', cursive;
@@ -96,4 +93,75 @@ input {
 
 #mainInscription {
 	padding: 10px 10px 0px 10px;
+}
+
+/* INTERFACE CSS */
+
+.menu {
+	padding-left: 0;
+	padding-right: 0;
+	padding-top: 50px;
+	background: #604020;
+	height: 700px;
+	border-right: 1px solid #000;
+}
+
+.btn-group-vertical {
+	padding-left: 0;
+}
+
+.btn-default {
+	background: #604020;
+	color: #fff;
+	border-color: #000;
+	border-left: none;
+	border-right: none;
+}
+
+.row {
+	margin: 0;
+}
+.interface {
+	height:700px;
+	width: 80%;
+	padding-left: 0;
+	padding-right: 0;
+	border: 2px solid #000;
+	background: linear-gradient(#FFDED1, #6B3D43);
+	display: block;
+}
+
+.carte {
+	height:700px;
+	width: 80%;
+	padding-left: 0;
+	padding-right: 0;
+	border: 2px solid #000;
+	background: url("../images/carte1.jpg");
+	display: none;
+}
+
+.monture {
+	height:700px;
+	width: 80%;
+	padding-left: 0;
+	padding-right: 0;
+	border: 2px solid #000;
+	background: #604020;
+	display: none;
+}
+
+.thumbnails {
+	padding-top: 150px;
+	padding-left: 100px;
+}
+
+.thumbnail {
+	height: 300px;
+	margin: 0 10px;
+}
+
+.thumbnail > img {
+	width: 100px;
+	height: 100px;
 }
