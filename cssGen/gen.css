@@ -1,3 +1,7 @@
+/*================================================================*/
+/*================ GENERAL CSS ===================================*/
+/*================================================================*/
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 /**
@@ -19,7 +23,9 @@ body{
 	background: url('https://sorenette.files.wordpress.com/2015/08/2381381-hyrule.png') no-repeat;
 	background-size: cover;
 }
-/*---------------Titre--------------*/
+/*================================================================*/
+/*================== TITRE CSS====================================*/
+/*================================================================*/
 
 .logo{
 	width: 90px;
@@ -94,8 +100,9 @@ input {
 #mainInscription {
 	padding: 10px 10px 0px 10px;
 }
-
-/* INTERFACE CSS */
+/*=============================================================================*/
+/*======================== INTERFACE CSS ======================================*/
+/*=============================================================================*/
 
 .menu {
 	padding-left: 0;
@@ -121,6 +128,7 @@ input {
 .row {
 	margin: 0;
 }
+
 .default {
 	height:700px;
 	width: 80%;
@@ -137,7 +145,7 @@ input {
 	padding-left: 0;
 	padding-right: 0;
 	border: 2px solid #000;
-	background: url("../images/carte1.jpg");
+	/*background: url("../images/map.jpg") no-repeat;*/
 	display: none;
 }
 
@@ -151,17 +159,42 @@ input {
 	display: none;
 }
 
+.compagnon {
+	height:700px;
+	width: 80%;
+	padding-left: 0;
+	padding-right: 0;
+	border: 2px solid #000;
+	background: #604020;
+	display: none;
+}
+
+.compagnon2 {
+	height:700px;
+	width: 80%;
+	padding-left: 0;
+	padding-right: 0;
+	border: 2px solid #000;
+	background: #604020;
+	display: none;
+}
+
 .thumbnails {
-	padding-top: 150px;
-	padding-left: 100px;
+	padding-top: 3%;
 }
 
 .thumbnail {
 	height: 300px;
-	margin: 0 10px;
+	margin: 10px;
 }
 
 .thumbnail > img {
 	width: 100px;
 	height: 100px;
+}
+
+.left-arrow, .right-arrow {
+	width: 30px;
+	height: 30px;
+	margin-top: 1%;
 }
