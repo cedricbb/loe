@@ -8,7 +8,6 @@
     
     	<link rel="stylesheet" type="text/css" href="cssGen/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="cssGen/gen.css">
-		<link rel="stylesheet" type="text/css" href="css/style.css">
 	</head>
 
 	<body>
@@ -16,7 +15,6 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-12"><h1 class="text-center titleGradient"><span class="legacy">Legacy</span><img src="images/logo.png" class="logo" alt="logo" title="Logo"><span class="f">f</span>Elements</h1></div>
-				
 			</div>
 
 			<div class="divider"></div>
@@ -48,9 +46,52 @@
 					</div>
 				</div>
 			</div>
+            <div class="container">
+                <div id="carousel" class="carousel slide" data-ride="carousel">
+                    <!--indicateurs visuels-->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel" data-slide-to="1"></li>
+                        <li data-target="#carousel" data-slide-to="2"></li>
+                        <li data-target="#carousel" data-slide-to="3"></li>
+                    </ol>
+                    <div class="carousel-inner" role="listbox">
+                        <!--slide 1-->
+                        <div class="item active">
+                            <img src="https://images6.alphacoders.com/601/601152.jpg">
+                        </div>
 
+                        <!--slide 2-->
+                        <div class="item">
+                            <img src="https://images2.alphacoders.com/601/601148.jpg">
+                        </div>
+
+                        <!--slide 3-->
+                        <div class="item">
+                            <img src="http://inspirationseek.com/wp-content/uploads/2016/03/Horizon-Zero-Dawn-Wallpaper.jpg">
+                        </div>
+
+                        <!--slide 4-->
+                        <div class="item">
+                            <img src="http://inspirationseek.com/wp-content/uploads/2016/03/Horizon-Zero-Dawn-Wallpaper-For-Desktop.jpg">
+                        </div>
+
+                        <a href="#carousel" class="left carousel-control" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                            <span class="sr-only">Précédent</span>
+                        </a>
+
+                        <a href="#carousel" class="right carousel-control" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
 		</div>
-		<!-- <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div> -->
 
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</body>
 </html>
