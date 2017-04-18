@@ -46,6 +46,10 @@
 						</form>
 					</div>
       <img src="images/cadre.png" class="cadre" alt="cadre" title="cadre">
+		<link rel="stylesheet" type="text/css" href="cssGen/index.css">
+
+<img src="images/cadre.png" class="cadre" alt="cadre" title="cadre">
+
 
 	<div class="container">
 
@@ -196,15 +200,6 @@
 
 	</div>
 
-
-
-
-
-<!--/!\ APPEL AUX SCRIPTS-->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-	<script src="js/bootstrap.js"></script>
-
-
 <footer>
 	
 	<div class="container">
@@ -286,13 +281,18 @@
 			</div>
 
 
-		</div>
-  </footer>
-  </div>
-        </div>
-        </div>
+		</div>     
+
+			<div class="col-sm-12 col-md-3">
+				<div class="reseaux">
+					<ul>
+						<li><a href="#"><span class="fa fa-twitter"></span>Suivez-nous sur Twitter!</a></li>
+						<li><a href="#"><span class="fa fa-facebook"></span>Et sur Facebook!</a></li>			
+					</ul>
+				</div>
+			</div>
+      </div>
+    </div>
+      </footer>
 </body>
 </html>
-        
-
-
