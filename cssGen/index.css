@@ -1,0 +1,200 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/**
+@import url('https://fonts.googleapis.com/css?family=Rubik:300,400,700');
+ **/
+
+ @import url('https://fonts.googleapis.com/css?family=Kaushan+Script');
+
+
+
+body{
+
+  margin:0;
+  padding:0;
+  background: url('https://sorenette.files.wordpress.com/2015/08/2381381-hyrule.png') no-repeat center fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari */
+  background-size: cover; /* version standardisée */
+  background-position: fixed;
+
+}
+
+/*---------------Logo--------------*/
+.cadre{
+	position: absolute;
+	width: 90%;
+	margin-left: 5%;
+	height: 90%;
+}
+
+.logo{ 
+	margin-top: 320px;
+
+}
+
+.titre{
+	margin-left: 22%;
+}
+
+.archer{
+	margin-top: 300px;
+	width: 12.2%;
+	height: 12.2%;
+}
+
+.iop{
+	margin-top: 300px;
+	width: 12.2%;
+	height: 12.2%;
+}
+
+.huppermage{
+	margin-top: 300px;
+	width: 12.2%;
+	height: 12.2%;
+}
+
+.ennemi1{
+	margin-top: 300px;
+	width: 12.2%;
+	height: 12.2%;
+}
+.ennemi2{
+	margin-top: 300px;
+	width: 12.2%;
+	height: 12.2%;
+}
+.ennemi3{
+	margin-top: 300px;
+	width: 12.2%;
+	height: 12.2%;
+}
+/*---------------Titre--------------*/
+
+
+
+h1 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 70px;
+	line-height: 150px;
+	display: none;
+	/*text-shadow: 6px 6px 15px #292424;*/
+}
+
+h2 {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 30px;
+	color: #ffffff;
+	margin: 0px;
+}
+
+/*---------------Caroussel--------------*/
+.carousel {
+
+	margin-top: 100px;
+	height: 450px !important;
+	margin-bottom: 50px;
+
+}
+
+.carousel img{
+	width: 100% !important;
+	height: 450px !important;
+}	
+
+/*---------------Formulaire--------------*/
+
+label {
+	color: #ffffff;
+	font-family: 'Kaushan Script', cursive;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+input {
+	font-family: 'Kaushan Script', cursive;
+	font-size: 18px;
+	font-weight: normal;
+}
+
+.btn{
+
+	font-family: 'Kaushan Script', cursive;
+	font-size: 18px;
+	font-weight: normal;
+	width: 100%;
+}
+
+.titleGradient {
+    background: -webkit-linear-gradient(#FFDED1, #6B3D43);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#boxInscription {
+	margin-top: 150px;
+	border: 1px solid #332E33;
+	border-radius: 5px;
+	/*width: 100%;*/
+	padding: 0px;
+	background-color: #706363;
+}
+
+#titleInscription {
+	/*width: 100%;*/
+	border-bottom: 1px solid #332E33;
+	text-align: center;
+	box-shadow: 0px 4px 12px #292424;
+	padding: 10px 0px 10px 0px;
+	background: linear-gradient(#706363, #5E5353);
+	border-radius: 5px 5px 0px 0px;
+}
+
+#mainInscription {
+	padding: 10px 10px 0px 10px;
+}
+
+.cgu{
+
+	color : #ffffff;
+}
+/*---------------Footer--------------*/
+
+footer{
+	border-top: 1px solid #332E33;
+	margin-top: 5%;
+	-moz-box-shadow: 1px 5px 4px 10px #292424;
+	-webkit-box-shadow: 1px 5px 4px 10px #292424;
+	-o-box-shadow: 1px 5px 4px 10px #292424;
+	box-shadow: 1px 5px 4px 10px #292424;
+	background: linear-gradient(#706363, #5E5353);
+}
+
+.copyright{
+	margin-top: 60px;
+	color: #ffffff;
+}
+
+.contact{
+	margin-top: 35px;
+}
+
+ul{
+	margin-top: 25px;
+}
+
+li{
+	list-style: none;
+}
+
+.fa{
+	color: #ffffff;
+    font-size: 2em;
+    height: 50px;
+    width: 50px;
+}
+
+a{
+	font-weight: bold;
+	color: #ffffff;
+}
