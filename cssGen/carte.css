@@ -1,0 +1,10 @@
+.carte {
+	height:700px;
+	width: 80%;
+	padding-left: 0;
+	padding-right: 0;
+	border: 2px solid #000;
+	/*background: url("../images/map.jpg") no-repeat;*/
+	display: none;
+}
+
