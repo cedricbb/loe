@@ -1,4 +1,4 @@
-<div class="col-md-10 compagnon2">
+<div class="col-md-7 compagnon2">
     <div class="row">
         <div class="thumbnails">
             <div class="col-md-2 thumbnail">

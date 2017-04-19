@@ -1,4 +1,4 @@
-<div class="col-md-10 monture">
+<div class="col-md-7 monture">
     <div class="row">
         <div class="thumbnails">
             <div class="col-md-2 thumbnail">
