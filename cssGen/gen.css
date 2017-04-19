@@ -1,3 +1,7 @@
+/*================================================================*/
+/*================ GENERAL CSS ===================================*/
+/*================================================================*/
+
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 /**
@@ -19,7 +23,9 @@ body{
 	background: url('https://sorenette.files.wordpress.com/2015/08/2381381-hyrule.png') no-repeat;
 	background-size: cover;
 }
-/*---------------Titre--------------*/
+/*================================================================*/
+/*================== TITRE CSS====================================*/
+/*================================================================*/
 
 .logo{
 	width: 90px;
@@ -94,8 +100,9 @@ input {
 #mainInscription {
 	padding: 10px 10px 0px 10px;
 }
-
-/* INTERFACE CSS */
+/*=============================================================================*/
+/*======================== INTERFACE CSS ======================================*/
+/*=============================================================================*/
 
 .menu {
 	padding-left: 0;
@@ -110,18 +117,48 @@ input {
 	padding-left: 0;
 }
 
-.btn-default {
-	background: #604020;
-	color: #fff;
-	border-color: #000;
-	border-left: none;
-	border-right: none;
+.btnMenu {
+	background-image: url('../images/bouton/bouton1.png');
+	background-color: #604020;
+	background-size: 100% 100%;
+	height: 55px;
+	border: none;
+	font-size: 1.5em;
+	text-align: center;
+    border-radius: 15px;
+    color: #ffffff;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.btnMenu:visited{
+  color: #ffffff;
+}
+
+.btnMenu:hover{
+  background-color: #604020;
+  transform: translateY(4px);
+  color: #ffffff; 
+}
+
+
+.btnMenu:focus{
+	background-color: #604020;	
+	color: #ffffff;
+}
+
+.btnMenu:active{
+	background-image: url('../images/bouton/bouton1.png');
+	background-color: #604020;
+	background-size: 100% 100%;
+	color: #ffffff; 
 }
 
 .row {
 	margin: 0;
 }
-.interface {
+
+.default {
 	height:700px;
 	width: 80%;
 	padding-left: 0;
@@ -131,37 +168,3 @@ input {
 	display: block;
 }
 
-.carte {
-	height:700px;
-	width: 80%;
-	padding-left: 0;
-	padding-right: 0;
-	border: 2px solid #000;
-	background: url("../images/carte1.jpg");
-	display: none;
-}
-
-.monture {
-	height:700px;
-	width: 80%;
-	padding-left: 0;
-	padding-right: 0;
-	border: 2px solid #000;
-	background: #604020;
-	display: none;
-}
-
-.thumbnails {
-	padding-top: 150px;
-	padding-left: 100px;
-}
-
-.thumbnail {
-	height: 300px;
-	margin: 0 10px;
-}
-
-.thumbnail > img {
-	width: 100px;
-	height: 100px;
-}
