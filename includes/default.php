@@ -1,1 +1,1 @@
-<div class="col-md-10 default"></div>
+<div class="col-md-7 default"></div>
