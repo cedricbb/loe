@@ -48,5 +48,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/interface.js"></script>
+    <script src="js/carte.js"></script>
+    <script src="js/monture.js"></script>
+    <script src="js/compagnon.js"></script>
+    <script src="js/voyage.js"></script>
 </body>
 </html>
