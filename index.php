@@ -43,7 +43,7 @@
 				<div id="titleInscription"><h2>Connexion</h2>
 				</div>
 				<div id="mainInscription">
-					<form>
+					<form method="post" action="interface.php">
 
 						<div class="form-group">
 							<label class="text-center" for="email">Pseudonyme</label>
