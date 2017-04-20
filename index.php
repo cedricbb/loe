@@ -13,7 +13,7 @@
 
 
 <body>
-<img src="images/cadre.png" class="cadre" alt="cadre" title="cadre">
+<img src="images/logo/cadre.png" class="cadre" alt="cadre" title="cadre">
 
 	<div class="container">
 
@@ -21,17 +21,17 @@
 
 			<div class="col-md-12" >
 
-			<img src="images/ennemi1.png" class="ennemi1" alt="ennemi1" title="ennemi1">
-			<img src="images/ennemi2.png" class="ennemi2" alt="ennemi2" title="ennemi2">
-			<img src="images/ennemi3.png" class="ennemi3" alt="ennemi3" title="ennemi3">
-				<img src="images/logo.png" class="logo" alt="logo" title="Logo">	
-			<img src="images/archer.png" class="archer" alt="archer" title="archer">
-			<img src="images/iop.png" class="iop" alt="iop" title="iop">
-			<img src="images/huppermage.png" class="huppermage" alt="huppermage" title="huppermage">							
+			<img src="images/logo/ennemi1.png" class="ennemi1" alt="ennemi1" title="ennemi1">
+			<img src="images/logo/ennemi2.png" class="ennemi2" alt="ennemi2" title="ennemi2">
+			<img src="images/logo/ennemi3.png" class="ennemi3" alt="ennemi3" title="ennemi3">
+				<img src="images/logo/logo.png" class="logo" alt="logo" title="Logo">	
+			<img src="images/logo/archer.png" class="archer" alt="archer" title="archer">
+			<img src="images/logo/iop.png" class="iop" alt="iop" title="iop">
+			<img src="images/logo/huppermage.png" class="huppermage" alt="huppermage" title="huppermage">							
 			</div>
 
 			<div class="col-md-12">	
-				<img src="images/titre.png" class="titre" alt="logo" title="Logo">
+				<img src="images/logo/titre.png" class="titre" alt="logo" title="Logo">
 				<h1>Legacy of elements</h1>
 			</div>	
 
@@ -107,28 +107,28 @@
 		   <div class="carousel-inner" role="listbox">
 		     <!--slide 1-->
 		     <div class="item active">
-		       <img src="images/screen1.png">
+		       <img src="images/screenshot/screen1.png">
 		       <div class="carousel-caption">
 		       </div>
 		     </div>
 		     
 		     <!--slide 2-->
 		     <div class="item">
-		       <img src="images/screen2.png">
+		       <img src="images/screenshot/screen2.png">
 		       <div class="carousel-caption">
 		       </div>
 		     </div>
 		     
 		     <!--slide 3-->
 		     <div class="item">
-		       <img src="images/screen3.png">
+		       <img src="images/screenshot/screen3.png">
 		       <div class="carousel-caption">
 		       </div>
 		     </div>
 		     
 		     <!--slide 4-->
 		     <div class="item">
-		       <img src="images/screen4.jpg">
+		       <img src="images/screenshot/screen4.jpg">
 		       <div class="carousel-caption">
 		       </div>
 		     </div>
