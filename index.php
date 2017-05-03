@@ -13,7 +13,7 @@
 
 
 <body>
-<img src="images/logo/cadre.png" class="cadre" alt="cadre" title="cadre">
+<!--<img src="images/logo/cadre.png" class="cadre" alt="cadre" title="cadre">-->
 
 	<div class="container">
 
@@ -21,19 +21,17 @@
 
 			<div class="col-md-12" >
 
-			<img src="images/logo/ennemi1.png" class="ennemi1" alt="ennemi1" title="ennemi1">
+			<!--<img src="images/logo/ennemi1.png" class="ennemi1" alt="ennemi1" title="ennemi1">
 			<img src="images/logo/ennemi2.png" class="ennemi2" alt="ennemi2" title="ennemi2">
-			<img src="images/logo/ennemi3.png" class="ennemi3" alt="ennemi3" title="ennemi3">
+			<img src="images/logo/ennemi3.png" class="ennemi3" alt="ennemi3" title="ennemi3">-->
 				<img src="images/logo/logo.png" class="logo" alt="logo" title="Logo">	
-			<img src="images/logo/archer.png" class="archer" alt="archer" title="archer">
+						<img src="images/logo/titre.png" class="titre" alt="logo" title="Logo">
+			<!--<img src="images/logo/archer.png" class="archer" alt="archer" title="archer">
 			<img src="images/logo/iop.png" class="iop" alt="iop" title="iop">
-			<img src="images/logo/huppermage.png" class="huppermage" alt="huppermage" title="huppermage">							
+			<img src="images/logo/huppermage.png" class="huppermage" alt="huppermage" title="huppermage">	-->						
 			</div>
 
-			<div class="col-md-12">	
-				<img src="images/logo/titre.png" class="titre" alt="logo" title="Logo">
-				<h1>Legacy of elements</h1>
-			</div>	
+			
 
 		</div>
 
@@ -56,7 +54,7 @@
 						</div>
 
 						<div class="form-group text-center">
-							<input type="submit" name="btnSub" value="Connexion" class="btn btn-success btn-lg">
+							<input type="submit" name="btnSub" value="Connexion" class="btn btn-lg btnIndex">
 						</div>
 					</form>
 				</div>
@@ -85,7 +83,7 @@
 						<input type="checkbox" name="cgu" value="1"><div class="cgu">Je certifie avoir pris connaissance CGU, les politiques de confidentialité et j'accepte les cookies</div> 
 
 						<div class="form-group text-center">
-							<input type="submit" name="btnSub" value="Inscription" class="btn btn-success btn-lg">
+							<input type="submit" name="btnSub" value="Inscription" class="btn btn-lg btnIndex">
 						</div>
 					</form>
 				</div>
@@ -153,11 +151,11 @@
 
 		<div class="row">
 			<div class="col-md-2 col-sm-1">
-				<a href="#" class="btn btn-success btn-lg" role="button">Acceuil</a>
+				<a href="#" class="btn btn-lg btnIndex" role="button">Acceuil</a>
 			</div>
 
 			<div class="col-md-offset-8 col-md-2 col-sm-2">
-				<a href="#" class="btn btn-success btn-lg" role="button">Forum</a>
+				<a href="#" class="btn btn-lg btnIndex" role="button">Forum</a>
 			</div>
 		</div>
 

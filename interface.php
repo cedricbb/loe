@@ -11,55 +11,45 @@
     <link rel="stylesheet" type="text/css" href="cssGen/montures.css">
     <link rel="stylesheet" type="text/css" href="cssGen/carte.css">
     <link rel="stylesheet" type="text/css" href="cssGen/caracteristiques.css">
+    <link rel="stylesheet" type="text/css" href="cssGen/chat.css">
+    <link rel="stylesheet" type="text/css" href="cssGen/joueur.css">
 </head>
 
 <body>
 
 <div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
-            <h1 class="text-center titleGradient"><span class="legacy">Legacy Of Elements</h1>
-        </div>
-    </div>
+
+    <div class="vide"></div>
+
     <div class="row">
         <div class="col-md-12">
-            <div class="col-md-2 menu btn-group-vertical">
-                    <button type="button" class="btnMenu"  id="carte">Carte</button>
-                    <button type="button" class="btnMenu" id="planque">Planque</button>
-                    <button type="button" class="btnMenu" id="caracteristiques">Caractéristiques</button>
-                    <button type="button" class="btnMenu" id="compagnon">Compagnons</button>
-                    <button type="button" class="btnMenu" id="monture">Montures</button>
-                    <button type="button" class="btnMenu" id="competences">Compétences</button>
-                    <button type="button" class="btnMenu" id="vendeur">Vendeur</button>
-                    <button type="button" class="btnMenu" id="equipement">Equipements</button>
-                    <button type="button" class="btnMenu" id="guilde">Guilde</button>
-                    <button type="button" class="btnMenu" id="classement">Classement</button>
-                    <button type="button" class="btnMenu" id="boutique">Boutique</button>
-            </div>
-                <div class="panel panel-default">
-                    <div class="panel-heading">
-                        <img src="images/hero1.png" class="img-circle"/>
-                        <p class="resume"><img src="images/pv.png"/> 1234</p>
-                        <p class="resume"><img src="images/atk.png"> 123</p>
-                        <p class="resume"><img src="images/def.png"> 98</p>
-                        <p id="experience">1234/2500 EXP</p>
+
+                <div class="col-md-2 menu btn-group-vertical">
+                <div class="CadreGeneral">
+                    <div class="panel panel-default">
+                        <div class="cadre">
+                            <div class="panel-heading">
+                                <img src="images/personnages/hero1.png" class="img-circle"/>
+                                <p class="resume"><img src="images/icones/pv.png"/> 1234</p>
+                                <p class="resume"><img src="images/icones/atk.png"> 123</p>
+                                <p class="resume"><img src="images/icones/def.png"> 98</p>
+                                <p id="experience">1234/2500 EXP</p>
+                                <div class="panel-body cadrePseudo">Bruce Le BG</div>
+                            </div>    
+                        </div>
+                        
                     </div>
-                    <div class="panel-body">Nom du héro</div>
+                        <button type="button" class="btnMenu" id="carte">Carte</button>
+                        <button type="button" class="btnMenu" id="joueur">Joueur</button> 
+                        <button type="button" class="btnMenu" id="marchand">Marchand</button>                                 <button type="button" class="btnMenu" id="planque">Planque</button>
+                        <button type="button" class="btnMenu" id="compagnon">Compagnons</button>
+                        <button type="button" class="btnMenu" id="monture">Montures</button>
+                        <button type="button" class="btnMenu" id="guilde">Guilde</button>
+                        <button type="button" class="btnMenu" id="classement">Classement</button>
                 </div>
-                    <button type="button" class="btn btn-default" id="carte">Carte</button>
-                    <button type="button" class="btn btn-default" id="planque">Planque</button>
-                    <button type="button" class="btn btn-default" id="caracteristiques">Caractéristiques</button>
-                    <button type="button" class="btn btn-default" id="compagnon">Compagnons</button>
-                    <button type="button" class="btn btn-default" id="monture">Montures</button>
-                    <button type="button" class="btn btn-default" id="competences">Compétences</button>
-                    <button type="button" class="btn btn-default" id="vendeur">Vendeur</button>
-                    <button type="button" class="btn btn-default" id="equipement">Equipements</button>
-                    <button type="button" class="btn btn-default" id="guilde">Guilde</button>
-                    <button type="button" class="btn btn-default" id="classement">Classement</button>
-                    <button type="button" class="btn btn-default" id="boutique">Boutique</button>
             </div>
             <?php
-            include_once "includes/default.php";
+            include_once "includes/joueur.php";
             include_once "includes/carte.php";
             include_once "includes/compagnons.php";
             include_once "includes/compagnons2.php";
@@ -67,8 +57,9 @@
             ?>
             <div class="col-sm-3 chat">
                 <form class="form-horizontal col-sm-12" action="minichat_post.php" method="post">
-                    <div class="panel">
-                        <div class="panel-body panel-minichat">
+                    <div class="panel panelChat">
+                        <div class="panel-body panel-minichat" id="minichat">
+
                             <?php
 
                             try
@@ -86,7 +77,7 @@
                             // Si tout va bien, on peut continuer
 
                             // Récupération des 10 derniers messages
-                            $reponse = $bdd->query('SELECT message, DATE_FORMAT(date_post, \'%Hh%imin\') AS date_post_fr FROM minichat ORDER BY ID ASC LIMIT 0,10');
+                            $reponse = $bdd->query('SELECT message, DATE_FORMAT(date_post, \'%Hh%imin\') AS date_post_fr FROM minichat ORDER BY ID ASC LIMIT 0,1000');
 
                             // Affichage de chaque message (toutes les données sont protégées par htmlspecialchars)
                             while ($donnees = $reponse->fetch())
@@ -98,15 +89,16 @@
                             $reponse->closeCursor();
 
                             ?>
+
                         </div>
                     </div>
                     <div class="form-group">
                         <label class="col-sm-2 control-label lab">Message:</label>
                         <div class="col-sm-6">
-                        <input type="text" class="form-control mess" name="message" required/>
+                        <input type="text" class="form-control mess" name="message" onkeyup="textLimit(this, 45);" required/>
                         </div>
                         <div class="col-sm-1">
-                            <button type="submit" class="btn">Envoyer</button>
+                            <button type="submit" class="btnEnvoyer">Envoyer</button>
                         </div>
                         </div>
                     </div>
@@ -121,6 +113,20 @@
     <script src="js/monture.js"></script>
     <script src="js/compagnon.js"></script>
     <script src="js/voyage.js"></script>
+    <script src="js/joueur.js"></script>
+
+<script>
+window.onload = function () {
+  var div = document.getElementById('minichat');
+  div.scrollTop = div.scrollHeight; //Fait descendre le scroll à son niveau maximum
+}
+
+function textLimit(field, maxlen) {
+   if (field.value.length > maxlen) {
+      field.value = field.value.substring(0, maxlen);
+      alert('Votre texte est trop long!');
+   }
+}
+</script>
 </body>
 </html>
-

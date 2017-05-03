@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="cssGen/bootstrap.css">
+	<link rel="stylesheet" href="cssGen/gen.css">
+</head>
+<body>
+	<div class="container">
+			<div class="row">
+				<div class="col-sm-offset-4 col-sm-4">
+					<div class="text-center">
+						<div class="btn btn-success btn-md" id="lanceCombat">Lancer combat!</div>
+						<div id="timer"></div>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-sm-12" id="combatWrapper">
+				<div class="col-sm-3" id="boxPerso"></div>
+				<div class="col-sm-9">
+					<div class="row" id="LigneA">
+						<!-- <div class="col-sm-3 vide"></div> -->
+						<div class="col-sm-2 case col1" id="A1"><div></div></div>
+						<div class="col-sm-2 case col2" id="A2"><div></div></div>
+						<div class="col-sm-2 case col3" id="A3"><div></div></div>
+						<div class="col-sm-2 case col4" id="A4"><div></div></div>
+						<div class="col-sm-2 case col5" id="A5"><div></div></div>
+						<div class="col-sm-1 case col6" id="A6"><div></div></div>
+						<div class="col-sm-1 case col7" id="A7"><div></div></div>
+					</div>
+					<div class="row" id="LigneB">
+						<!-- <div class="col-sm-3 vide"></div> -->
+						<div class="col-sm-2 case col1" id="B1"><div></div></div>
+						<div class="col-sm-2 case col2" id="B2"><div></div></div>
+						<div class="col-sm-2 case col3" id="B3"><div></div></div>
+						<div class="col-sm-2 case col4" id="B4"><div></div></div>
+						<div class="col-sm-2 case col5" id="B5"><div></div></div>
+						<div class="col-sm-1 case col6" id="B6"><div></div></div>
+						<div class="col-sm-1 case col7" id="B7"><div></div></div>
+					</div>
+					<div class="row" id="LigneC">
+						<!-- <div class="col-sm-3 vide"></div> -->
+						<div class="col-sm-2 case col1" id="C1"><div></div></div>
+						<div class="col-sm-2 case col2" id="C2"><div></div></div>
+						<div class="col-sm-2 case col3" id="C3"><div></div></div>
+						<div class="col-sm-2 case col4" id="C4"><div></div></div>
+						<div class="col-sm-2 case col5" id="C5"><div></div></div>
+						<div class="col-sm-1 case col6" id="C6"><div></div></div>
+						<div class="col-sm-1 case col7" id="C7"><div></div></div>
+					</div>
+					<div class="row" id="LigneD">
+						<!-- <div class="col-sm-3 vide"></div> -->
+						<div class="col-sm-2 case col1" id="D1"><div></div></div>
+						<div class="col-sm-2 case col2" id="D2"><div></div></div>
+						<div class="col-sm-2 case col3" id="D3"><div></div></div>
+						<div class="col-sm-2 case col4" id="D4"><div></div></div>
+						<div class="col-sm-2 case col5" id="D5"><div></div></div>
+						<div class="col-sm-1 case col6" id="D6"><div></div></div>
+						<div class="col-sm-1 case col7" id="D7"><div></div></div>
+					</div>
+					<div class="row" id="LigneE">
+						<!-- <div class="col-sm-3 vide"></div> -->
+						<div class="col-sm-2 case col1" id="E1"><div></div></div>
+						<div class="col-sm-2 case col2" id="E2"><div></div></div>
+						<div class="col-sm-2 case col3" id="E3"><div></div></div>
+						<div class="col-sm-2 case col4" id="E4"><div></div></div>
+						<div class="col-sm-2 case col5" id="E5"><div></div></div>
+						<div class="col-sm-1 case col6" id="E6"><div></div></div>
+						<div class="col-sm-1 case col7" id="E7"><div></div></div>
+					</div>
+				</div>
+			</div>
+	</div>
+
+
+	<script src="js/jquery-3.2.0.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			console.log('ok');
+
+			typeTerrain = 'plaine'; /* volcan, ocean, orage, tempete, plaine*/
+			niveauAttaque = 1;
+			typeAttaque = 'terre'; /*feu, eau, foudre, vent, terre*/
+			timer = 2000;
+			start = 'non';
+			score = 0;
+
+			// Fonction de génération aléatoire de lettre entre A et E
+			function letterGen(nbLetter){
+    			var lettre = "";
+   				var charset = "ABCDE";
+    
+    			for( var i=0; i < nbLetter; i++ )
+       			lettre += charset.charAt(Math.floor(Math.random() * charset.length));
+    
+    			return lettre;
+			}
+
+			if (niveauAttaque == 1) {
+				// Affichage de la grille avec le bon nombre de colonne en fonction du niveau de l'attaque
+				$("div#LigneA, div#LigneB, div#LigneC, div#LigneD, div#LigneE").css('display', 'block');
+				$("div.col6, div.col7").css('display', 'none');
+
+				// Définition du nombre de jeton à cliquer (ici entre 3 et 4)
+				nbJetons = Math.floor((Math.random() * 2) + 3);
+
+				// Définition de la position des jetons
+				tableauPositionJeton = new Array();
+				
+				for (var i = 0; i < nbJetons; i++) {
+					tableauPositionJeton[i] = letterGen(1) + (i + 1);
+					tableauPositionJeton[i] = tableauPositionJeton[i].substring(1);
+				}
+
+				pat1 = tableauPositionJeton[0];
+				pat2 = tableauPositionJeton[1];
+				pat3 = tableauPositionJeton[2];
+				pat4 = tableauPositionJeton[3];
+
+				if (typeTerrain == 'plaine') {
+						// Définition du fond en fonction du type de terrain
+						$("div#combatWrapper").css('background-image', 'url("images/fond/fondHerbe.jpg")');
+
+						if (typeAttaque == 'terre') {
+							// Définition de la couleur des cases en fonction du type d'attaque
+							$("div.case").css('background-color', 'rgba(60, 180, 80, 1)');
+							$("div#LigneA div.case, div#LigneB div.case, div#LigneC div.case, div#LigneD div.case, div#LigneE div.case").mouseenter(function(){
+							$(this).css('background-color', 'rgba(48, 145, 65, 1)');
+							});
+							$("div#LigneA div.case, div#LigneB div.case, div#LigneC div.case, div#LigneD div.case, div#LigneE div.case").mouseleave(function(){
+							$(this).css('background-color', 'rgba(60, 180, 80, 1)');
+							});
+
+
+							/* Lancement combat bouton */
+							$("div#lanceCombat").click(function(){
+								$(this).css('display', 'none');
+								start = 'ok';
+								$("div#timer").css('display', 'block');
+
+								if (start == 'ok') {
+									/*for (var i = 1; i <= nbJetons; i++) {
+										$("div#"+pat+i+" div").addClass("jeton");
+
+
+										, div#"+pat2+" div, div#"+pat3+" div, div#"+pat4+" div
+									}*/
+									$("div#"+pat1+" div").addClass("jeton");
+									$("div#timer").html(timer);
+									$("div#"+pat1+" div.jeton").click(function(){
+										$("div#"+pat1+" div").removeClass("jeton");
+										$("div#"+pat2+" div").addClass("jeton");
+										score = score + 1;
+										console.log(score);
+
+										$("div#"+pat2+" div.jeton").click(function(){
+											$("div#"+pat2+" div").removeClass("jeton");
+											$("div#"+pat3+" div").addClass("jeton");
+											score = score + 1;
+											console.log(score);
+
+											$("div#"+pat3+" div.jeton").click(function(){
+												$("div#"+pat3+" div").removeClass("jeton");
+												$("div#"+pat4+" div").addClass("jeton");
+												score = score + 1;
+												console.log(score);
+
+												$("div#"+pat4+" div.jeton").click(function(){
+													$("div#"+pat4+" div").removeClass("jeton");
+													score = score + 1;
+													console.log(score);
+												});
+												console.log(score);
+											});
+											console.log(score);
+										});
+										console.log(score);
+									});
+									console.log(score);
+								} // Fin de if(start == ok)
+							});
+						}
+
+						else if (typeAttaque == 'feu') {
+
+						}
+
+						else if (typeAttaque == 'foudre') {
+							
+						}
+
+						else if (typeAttaque == 'vent') {
+							
+						}
+
+						else if (typeAttaque == 'terre') {
+							
+						}
+						
+				}
+
+				else if (typeTerrain == 'volcan') {
+
+				}
+
+				else if (typeTerrain == 'ocean') {
+
+				}
+
+				else if (typeTerrain == 'orage') {
+
+				}
+
+				else if (typeTerrain == 'tempete'){
+
+				}
+
+				
+			}
+
+
+
+
+			else if (niveauAttaque == 2){
+				// Affiche le nombre colonne
+				$("div#LigneA, div#LigneB, div#LigneC, div#LigneD, div#LigneE").css('display', 'block');
+				$("div.col6, div.col7").css('display', 'none');
+			}
+
+			else if (niveauAttaque == 3){
+				$("div#LigneA, div#LigneB, div#LigneC, div#LigneD, div#LigneE").css('display', 'block');
+				$("div.col6").css('display', 'none');
+			}
+
+			else if (niveauAttaque == 4){
+				$("div#LigneA, div#LigneB, div#LigneC, div#LigneD, div#LigneE").css('display', 'block');
+				$("div.col6").css('display', 'none');
+			}
+
+			else if (niveauAttaque == 5){
+				$("div#LigneA, div#LigneB, div#LigneC, div#LigneD, div#LigneE").css('display', 'block');
+			}
+
+			function letterGen(nbLetter){
+    			var text = " ";
+   				var charset = "ABCDE";
+    
+    			for( var i=0; i < nbLetter; i++ )
+       			text += charset.charAt(Math.floor(Math.random() * charset.length));
+    
+    			return text;
+			}
+
+
+			
+
+
+
+			
+
+			
+
+			
+
+
+
+		});
+	</script>
+</body>
+</html>
