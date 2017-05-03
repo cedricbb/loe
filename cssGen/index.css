@@ -12,7 +12,7 @@ body{
 
   margin:0;
   padding:0;
-  background: url('https://sorenette.files.wordpress.com/2015/08/2381381-hyrule.png') no-repeat center fixed; 
+  background: url('../images/fond/Plain.png') no-repeat center fixed; 
   -webkit-background-size: cover; /* pour anciens Chrome et Safari */
   background-size: cover; /* version standardisée */
   background-position: fixed;
@@ -28,44 +28,46 @@ body{
 }
 
 .logo{ 
-	margin-top: 320px;
-
+	margin-top: 70px;
+	float: left;
+	margin-left: 12%;
 }
 
 .titre{
-	margin-left: 22%;
+	margin-top: 120px;
+	float: left;
 }
 
 .archer{
-	margin-top: 300px;
+	margin-top: 0px;
 	width: 12.2%;
 	height: 12.2%;
 }
 
 .iop{
-	margin-top: 300px;
+	margin-top: 0px;
 	width: 12.2%;
 	height: 12.2%;
 }
 
 .huppermage{
-	margin-top: 300px;
+	margin-top: 0px;
 	width: 12.2%;
 	height: 12.2%;
 }
 
 .ennemi1{
-	margin-top: 300px;
+	margin-top: 0px;
 	width: 12.2%;
 	height: 12.2%;
 }
 .ennemi2{
-	margin-top: 300px;
+	margin-top: 0px;
 	width: 12.2%;
 	height: 12.2%;
 }
 .ennemi3{
-	margin-top: 300px;
+	margin-top: 0px;
 	width: 12.2%;
 	height: 12.2%;
 }
@@ -84,7 +86,7 @@ h1 {
 h2 {
 	font-family: 'Kaushan Script', cursive;
 	font-size: 30px;
-	color: #ffffff;
+	color: #f5f5f5;
 	margin: 0px;
 }
 
@@ -105,7 +107,7 @@ h2 {
 /*---------------Formulaire--------------*/
 
 label {
-	color: #ffffff;
+	color: #f5f5f5;
 	font-family: 'Kaushan Script', cursive;
 	font-size: 18px;
 	font-weight: normal;
@@ -117,12 +119,22 @@ input {
 	font-weight: normal;
 }
 
-.btn{
+.btnIndex{
 
 	font-family: 'Kaushan Script', cursive;
 	font-size: 18px;
 	font-weight: normal;
 	width: 100%;
+	//background: #82CCED;
+	background: #60A4DD;
+	color: #f5f5f5;
+	box-shadow: 0px 2px 8px #000;
+	margin-top: 20px;
+}
+
+.btnIndex:hover{
+	background: #4D81CC;
+	color: #f5f5f5;
 }
 
 .titleGradient {
@@ -137,7 +149,8 @@ input {
 	border-radius: 5px;
 	/*width: 100%;*/
 	padding: 0px;
-	background-color: #706363;
+	background: linear-gradient(#87715C, #A38064);
+
 }
 
 #titleInscription {
@@ -146,8 +159,9 @@ input {
 	text-align: center;
 	box-shadow: 0px 4px 12px #292424;
 	padding: 10px 0px 10px 0px;
-	background: linear-gradient(#706363, #5E5353);
+	background: linear-gradient(#87715C, #A38064);
 	border-radius: 5px 5px 0px 0px;
+
 }
 
 #mainInscription {
@@ -156,23 +170,25 @@ input {
 
 .cgu{
 
-	color : #ffffff;
+	color : #f5f5f5;
 }
 /*---------------Footer--------------*/
 
 footer{
+	
+	color: #f5f5f5;
 	border-top: 1px solid #332E33;
 	margin-top: 5%;
 	-moz-box-shadow: 1px 5px 4px 10px #292424;
 	-webkit-box-shadow: 1px 5px 4px 10px #292424;
 	-o-box-shadow: 1px 5px 4px 10px #292424;
 	box-shadow: 1px 5px 4px 10px #292424;
-	background: linear-gradient(#706363, #5E5353);
+	background: linear-gradient(#87715C, #A38064);
 }
 
 .copyright{
 	margin-top: 60px;
-	color: #ffffff;
+	color: #f5f5f5;
 }
 
 .contact{
@@ -188,7 +204,7 @@ li{
 }
 
 .fa{
-	color: #ffffff;
+	color: #f5f5f5;
     font-size: 2em;
     height: 50px;
     width: 50px;
@@ -196,5 +212,5 @@ li{
 
 a{
 	font-weight: bold;
-	color: #ffffff;
+	color: #f5f5f5;
 }
